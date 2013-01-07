@@ -1,0 +1,105 @@
+body {
+  background: #fff;
+  color: #333;
+}
+
+.border {
+  height:5px;
+  background-color: #eee;
+}
+
+strong {
+  font-weight: 900;
+}
+
+p {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.main p {
+  margin: 10%;
+  font-weight: 300;
+  font-size: 92px;
+  line-height: 1.4;
+  transition: all .2s linear; 
+  -o-transition: all .2s linear; 
+  -moz-transition: all .2s linear; 
+  -webkit-transition: all .2s linear;
+}
+
+.title {
+  color: #fff;
+	background: #333;
+	padding: 0.6% 1.5% 1.1% 1%;
+}
+
+.photo {
+	display: none;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  text-align: left;
+  padding: 1% 10%;
+  color: #555;
+}
+
+.footer a {
+  color: #555;
+}
+
+.footer a:hover {
+  color: #222;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .main p {
+    font-size: 26px;
+  }
+  body {
+  	padding: 0;
+  }
+  .border {
+  	height: 2px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+  	padding: 0;
+  }
+  .main p {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .main p {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+  .main p {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main p {
+    font-size: 92px;
+  }
+}
+
+::-moz-selection,
+::selection {
+  background: #000;
+  color: #fff;
+}
